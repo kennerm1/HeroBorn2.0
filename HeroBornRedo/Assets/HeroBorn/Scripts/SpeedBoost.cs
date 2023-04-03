@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,9 +18,8 @@ public class SpeedBoost : MonoBehaviour
             Destroy(this.transform.parent.gameObject);
             Debug.Log("Speed boost!");
 
-            PlayerBehavior Player = collision.gameObject.GetComponent < PlayerBehavior >
-                gameManager.moveSpeed += 10;
+            PlayerBehavior Player = collision.gameObject.GetComponent<PlayerBehavior>();
+            gameManager.moveSpeed += 10;
         }
     }
 }
-*/

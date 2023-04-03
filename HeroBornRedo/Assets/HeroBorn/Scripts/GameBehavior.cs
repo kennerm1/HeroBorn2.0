@@ -17,10 +17,13 @@ public class GameBehavior : MonoBehaviour, IManager
     }
     public bool showWinScreen = false;
     public string labelText = "Collect all 4 items and win your freedom!";
-    public int maxItems = 4;
+    public int maxItems = 5;
     public bool showLossScreen = false;
     public delegate void DebugDelegate(string newText);
     public DebugDelegate debug = Print;
+    public float moveSpeed;
+    public float jumpVelocity;
+    public float playerHP;
 
     private int _itemsCollected = 0;
     public int Items
